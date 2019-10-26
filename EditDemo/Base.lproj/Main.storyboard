@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EditDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5L-BG-vT0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-We-eVD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gwv-13-qAt">
+                                                <rect key="frame" x="0.0" y="70" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gwv-13-qAt" secondAttribute="height" multiplier="414:50" id="1jV-YU-5FH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gwv-13-qAt" firstAttribute="centerX" secondItem="VtJ-We-eVD" secondAttribute="centerX" id="0YN-hT-p9y"/>
+                                            <constraint firstAttribute="bottom" secondItem="gwv-13-qAt" secondAttribute="bottom" id="M6y-vL-x0o"/>
+                                            <constraint firstAttribute="width" secondItem="VtJ-We-eVD" secondAttribute="height" multiplier="414:120" id="lA2-Em-byT"/>
+                                            <constraint firstItem="gwv-13-qAt" firstAttribute="width" secondItem="VtJ-We-eVD" secondAttribute="width" multiplier="1:1" id="s5P-1Q-8Mz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="VtJ-We-eVD" firstAttribute="width" secondItem="h5L-BG-vT0" secondAttribute="width" id="2AY-j5-b5s"/>
+                                    <constraint firstItem="VtJ-We-eVD" firstAttribute="centerX" secondItem="h5L-BG-vT0" secondAttribute="centerX" id="7e5-Ny-WVq"/>
+                                    <constraint firstItem="VtJ-We-eVD" firstAttribute="top" secondItem="h5L-BG-vT0" secondAttribute="top" id="enB-LC-APC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h5L-BG-vT0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Wh-2N-5FQ"/>
+                            <constraint firstItem="h5L-BG-vT0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YK8-hT-0qe"/>
+                            <constraint firstAttribute="bottom" secondItem="h5L-BG-vT0" secondAttribute="bottom" id="fci-7x-7RA"/>
+                            <constraint firstAttribute="trailing" secondItem="h5L-BG-vT0" secondAttribute="trailing" id="l2L-a7-8Ei"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="gwv-13-qAt" id="brc-vn-PxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+</document>
